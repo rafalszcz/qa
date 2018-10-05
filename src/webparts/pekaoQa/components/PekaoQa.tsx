@@ -2,14 +2,14 @@ import * as React from 'react';
 import styles from './PekaoQa.module.scss';
 import { IPekaoQaProps } from './IPekaoQaProps';
 import { escape } from '@microsoft/sp-lodash-subset';
-import { IPekaoQaState } from './IPekaoQaState'
+import { IPekaoQaState } from './IPekaoQaState';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
-import { IPekaoQaItem } from './IPekaoQaItem'
+import { IPekaoQaItem } from './IPekaoQaItem';
 import { DisplayMode } from '@microsoft/sp-core-library';
-import PekaoQaSearchBox from './searchBox/PekaoQaSearchBox'
-import PekaoQaItemsList from './items/PekaoQaItemsList'
-import PekaoQaPager from './items/PekaoQaPager'
-import { ICellValue } from './ICellValue'
+import PekaoQaSearchBox from './searchBox/PekaoQaSearchBox';
+import PekaoQaItemsList from './items/PekaoQaItemsList';
+import PekaoQaPager from './items/PekaoQaPager';
+import { ICellValue } from './ICellValue';
 export default class PekaoQa extends React.Component<IPekaoQaProps, IPekaoQaState> {
   constructor(props: IPekaoQaProps, state: IPekaoQaState) {
     super(props);
@@ -18,7 +18,7 @@ export default class PekaoQa extends React.Component<IPekaoQaProps, IPekaoQaStat
       listItems: [],
       currentPageNo: 1,
       items: []
-    }
+    };
   }
   componentDidMount() {
     this.loadItems();

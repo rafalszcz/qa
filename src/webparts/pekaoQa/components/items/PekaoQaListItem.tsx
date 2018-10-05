@@ -1,8 +1,7 @@
-import * as React from 'react'
-import { IPekaoQaListItemProps } from './IPekaoQaListItemProps'
-import { IPekaoQaListItemState } from './IPekaoQaListItemState'
-import { escape } from '@microsoft/sp-lodash-subset';
-import styles from '../PekaoQa.module.scss';
+import * as React from 'react';
+import { IPekaoQaListItemProps } from './IPekaoQaListItemProps';
+import { IPekaoQaListItemState } from './IPekaoQaListItemState';
+
 
 export default class PekaoQaListItem extends React.Component<IPekaoQaListItemProps, IPekaoQaListItemState> {
     constructor(props: IPekaoQaListItemProps, state: IPekaoQaListItemState) {

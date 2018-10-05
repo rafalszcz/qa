@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { IPekaoQaItemsListProps } from './IPekaoQaItemsListProps'
-import PekaoQaBootstrapListItem from './PekaoQaListItem'
-import PekaoQaPager from './PekaoQaPager'
+import * as React from 'react';
+import { IPekaoQaItemsListProps } from './IPekaoQaItemsListProps';
+import PekaoQaBootstrapListItem from './PekaoQaListItem';
+import PekaoQaPager from './PekaoQaPager';
 import { Spinner, SpinnerSize } from 'office-ui-fabric-react/lib/Spinner';
 import { Label } from 'office-ui-fabric-react/lib/Label';
-import { IPekaoQaItemsListState } from './IPekaoQaItemsListState'
+import { IPekaoQaItemsListState } from './IPekaoQaItemsListState';
 import { each } from '@microsoft/sp-lodash-subset';
 export default class PekaoQaItemsList extends React.Component<IPekaoQaItemsListProps, IPekaoQaItemsListState> {
     /**
@@ -15,7 +15,7 @@ export default class PekaoQaItemsList extends React.Component<IPekaoQaItemsListP
         this.state = {
             currentPageNo: 0,
             items: []
-        }
+        };
 
     }
     componentDidMount()
@@ -68,7 +68,7 @@ export default class PekaoQaItemsList extends React.Component<IPekaoQaItemsListP
                     <div className="qa-list">
 
                         {itemsToDisplay.map((item) => {
-                            return <PekaoQaBootstrapListItem key={item.id} item={item} openItem={this.openItem} />
+                            return <PekaoQaBootstrapListItem key={item.id} item={item} openItem={this.openItem} />;
 
                         })}
                     </div>
@@ -81,7 +81,7 @@ export default class PekaoQaItemsList extends React.Component<IPekaoQaItemsListP
             else {
                 return (<div>
                     Zapytanie nie zwróciło wyników
-                </div>)
+                </div>);
             }
 
         }

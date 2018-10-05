@@ -1,5 +1,5 @@
 import { IPekaoQaItem } from '../IPekaoQaItem'
 export interface IPekaoQaItemsListState {
-    currentPageNo: number,
+    currentPageNo: number;
     items:IPekaoQaItem[];
 }

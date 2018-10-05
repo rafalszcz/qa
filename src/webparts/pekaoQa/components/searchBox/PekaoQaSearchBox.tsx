@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { IPekaoQaSearchBoxProps } from './IPekaoQaSearchBoxProps'
+import { IPekaoQaSearchBoxProps } from './IPekaoQaSearchBoxProps';
 import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
 
 
 export default class PekaoQaSearchBox extends React.Component<IPekaoQaSearchBoxProps, void> {
-    onSearchTextChange = (event: React.FormEvent<HTMLInputElement>) => {
+    private onSearchTextChange = (event: React.FormEvent<HTMLInputElement>) => {
         this.props.clickFunction(event.currentTarget.value);
     }
-    onSearchTextChange2 = (filter) => {
+    private onSearchTextChange2 = (filter) => {
         console.log(filter);
         this.props.clickFunction(filter);
     }

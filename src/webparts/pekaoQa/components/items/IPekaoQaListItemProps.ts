@@ -1,5 +1,5 @@
 import { IPekaoQaItem } from '../IPekaoQaItem'
 export interface IPekaoQaListItemProps {
-    item: IPekaoQaItem,
+    item: IPekaoQaItem;
     openItem: (id:number) => void;
 }

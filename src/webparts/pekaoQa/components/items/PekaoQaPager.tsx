@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { IPekaoQaPagerProps } from './IPekaoQaPagerProps'
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
-import styles from '../PekaoQa.module.scss'
+import { IPekaoQaPagerProps } from './IPekaoQaPagerProps';
+
 
 export default class PekaoQaPager extends React.Component<IPekaoQaPagerProps, void> {
     public setCurrentPageNo = (pageNo: number) => {
