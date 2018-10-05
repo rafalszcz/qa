@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/pekaoQa/PekaoQaWebPart.js",
+      "manifest": "./src/webparts/pekaoQa/PekaoQaWebPart.manifest.json",
+      "outputPath": "./dist/pekao-qa.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "pekaoQaStrings": "webparts/pekaoQa/loc/{locale}.js"
+  }
+}

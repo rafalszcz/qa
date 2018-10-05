@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+  "id": "0cc47b1b-455d-4f53-83b6-400089138fba",
+  "alias": "PekaoQaWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "0cc47b1b-455d-4f53-83b6-400089138fba",
+      "group": {
+        "default": "Pekao",
+        "pl-pl": "Pekao WebParts"
+      },
+      "title": {
+        "default": "PekaoQA",
+        "pl-pl": "Pekao pytania i odpowiedzi"
+      },
+      "description": {
+        "default": "PekaoQA description",
+        "pl-pl": "WebPart umożliwiający wyświetlanie pytań i odpowiedzi"
+      },
+      "officeFabricIconFontName": "SunQuestionMark",
+      "properties": {
+        "questionField": "PekaoQAQuestion",
+        "answerField": "PekaoQAAnswer",
+        "categoryField": "PekaoQACategory",
+        "orderField": "PekaoQAOrder",
+        "showSearchBox": false,
+        "showPager": false,
+        "pageLength": 5,
+        "itemsExpanded":false,
+        "searchRowLimit":50,
+        "cssStyles":".qa-container {            padding: 5px;        }          .qa-category {             padding-bottom: 15px;         }          .qa-category-title {              font-size: 1.3em;              font-weight: bold;              padding-bottom: 10px;          }            .qa-item {              padding-bottom: 10px;          }            .qa-question {              padding-bottom: 5px;          }            .qa-answer {              padding-bottom: 5px;          }          .qa-pager          {              font-size:0.9em;          }          .qa-pager ul {              display: inline;              padding-left: 0px;              margin: 10px 0;          }           .qa-pager > ul > li {              display: inline;              padding-right:3px;;          }"
+      }
+    }
+  ]
+  // "preconfiguredEntries": [{
+  //   "groupId": "0cc47b1b-455d-4f53-83b6-400089138fba",
+  //   "group": { "default": "Under Development" },
+  //   "title": { "default": "PekaoQA" },
+  //   "description": { "default": "PekaoQA description" },
+  //   "officeFabricIconFontName": "Page",
+  //   "properties": {
+  //     "description": "PekaoQA"
+  //   }
+  // }]
+}

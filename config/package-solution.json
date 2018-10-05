@@ -1,0 +1,23 @@
+{
+  "solution": {
+    "name": "pekao-qa-client-side-solution",
+    "id": "020d2218-54ac-45c2-beff-06f592605f41",
+    "title":"Pekao QA",
+    "version": "1.0.0.0",
+    "features": [{  
+      "title": "Pekao QA Kolumny",  
+      "description": "Dodaje kolumy QA na kolekcji witryn",  
+      "id": "439e398d-50cf-4767-81a9-405a1e76cb7f",  
+      "version": "1.0.0.1",  
+      "assets": {          
+        "elementManifests": [  
+          "elements.xml"  
+        ]  
+      }  
+    }]  
+    
+  },
+  "paths": {
+    "zippedPackage": "solution/pekao-qa.sppkg"
+  }
+}

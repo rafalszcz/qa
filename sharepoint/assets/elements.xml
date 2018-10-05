@@ -1,0 +1,47 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+ <Field
+       ID="{f54ac44b-3b3b-47cd-ad3e-1460ec494d7e}"
+       Name="PekaoQAQuestion"
+       DisplayName="QA Pytanie"
+       Type="Note"
+       Required="FALSE"
+       RichText="TRUE"
+       RichTextMode="FullHtml"
+       Group="Pekao QA">
+  </Field>
+  <Field
+       ID="{0cd6ead5-6ec9-4701-9184-c87462fb4590}"
+       Name="PekaoQAAnswer"
+       DisplayName="QA Odpowiedź"
+       Type="Note"
+       Required="FALSE"
+       RichText="TRUE"
+       RichTextMode="FullHtml"
+       Group="Pekao QA">
+  </Field>
+ <Field
+       ID="{385a63af-1749-4aea-ae5c-d24935d69926}"
+       Name="PekaoQACategory"
+       DisplayName="QA Kategoria"
+       Type="Choice"
+       Required="FALSE"
+       Group="Pekao QA">
+  </Field>
+   <Field
+       ID="{bcc971d3-a821-43ff-8196-40d9ad26a10f}"
+       Name="PekaoQAOrder"
+       DisplayName="QA Kolejność"
+       Type="Number"
+       Required="FALSE"
+       Group="Pekao QA"
+       >
+  </Field>
+  <Field
+       ID="{8edff19b-ef4f-4c52-a001-1f7e9a4c726b}"
+       Name="PekaoQAIsActive"
+       DisplayName="QA Is Active"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Pekao QA">
+  </Field>
+</Elements>
